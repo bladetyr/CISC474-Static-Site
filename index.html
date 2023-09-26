@@ -1,26 +1,50 @@
 <!DOCTYPE html>
+<!--Blade Tyrrell / CISC474 / Personal Web Page 1 / bladetyr@udel.edu-->
 <html lang="en-US">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/css/style.css">
+<script defer type="text/javascript" src="/src/contact.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   
 <title>Blade Tyrrell's Personal Website</title>
 
 <body>
-    <h1 class = "header">Blade Tyrrell</h1>
-    <!--Blade Tyrrell / CISC474 / Personal Web Page 1 / bladetyr@udel.edu-->
-
+    <body class="borderless">
+        <h1 class = "header">Blade Tyrrell</h1>
+        <!--NAVIGATION BAR-->
+        <ul class="nav">
+            <li class="navtext" style="float:left"><a href="https://jthensley03.github.io/">Previous Student</a></li>
+            <li class="navtext" style="background-color:#171616"><a href="index.html">Home</a></li>
+            <li class="navtext"><a href="aboutMe.html">About Me</a></li>
+            <li class="navtext" id="contactButton"><a>Contact Me</a></li>
+            <li class="navtext"><a href="https://mattm401.github.io/">Course Website</a></li>
+            <li class="navtext" style="float:right"><a href="https://mwang840.github.io/">Next Student</a></li>
+        </ul>
+    </body>
+    <!--IMAGE AND EVERYTHING UNDER NAV BAR-->
     <img src="me.png" class = "normalimg" alt="Blade standing in front of a wire fence. She has her brown hair tired back in a ponytail with a black facemask on. She is giving a peace sign. Behind her is a white cow with black spots.">
-    <br><br>
-    <div>
-        <h2>Link to Course GitHub Site:</h2>
-        <a href="https://mattm401.github.io/">HYPERLINK HERE !!!</a>
-
-        <h2>Previous Student:</h2>
-        <a href="https://jthensley03.github.io/">Jason Hensley</a>
-
-        <h2>Next Student:</h2>
-        <a href="https://mwang840.github.io/">Maxwell Wang</a>
-    </div>
-    <br>
-    <a href="aboutMe.html" class = "rainbow">click here to learn about me B]</a>
 </body>
+
+<!--MODAL CODE FOR FORM HERE-->
+<div id="contactModal" class="modal">
+    <h1>Contact Form</h1>
+    <form id="contact">
+        <div id="errors" class="modalMessage"></div>
+        <label for='user_fname'>First Name:</label>
+        <input id='user_fname' name="user_fname" type='text' class='form-control' required>
+        <label for='user_lname'>Last Name:</label>
+        <input id='user_lname' name="user_lname" type='text' class='form-control' required>
+        <br>
+        <label for='user_email'>Email:</label>
+        <input id='user_email' name="user_email" type='text' class='form-control' required>
+        <br>
+        <label for='user_phone'>Phone Number:</label>
+        <input id='user_phone' name="user_phone" type='text' class='form-control' required>
+        <br>
+        <label for='user_message'>Message:</label>
+        <textarea id='user_message' name="user_message" rows="4" type='text' class='form-control' required></textarea>
+        <br>
+        <input id="submit" beforeClose="validation" data-backdrop="static" type='submit' value='Submit'>
+        <button style="float:right" id="close">Close</button>
+    </form>
+</div>
