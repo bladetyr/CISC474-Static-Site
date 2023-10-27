@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ8FC0QRZD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DJ8FC0QRZD');
+</script>
+
+
+<link rel="stylesheet" href="/css/style.css">
+<script defer type="text/javascript" src="/src/contact.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+<title>About Me</title>
+	
+<body class="borderless">
+    <h1 class = "header">Blade Tyrrell</h1>
+    <!--NAVIGATION BAR-->
+    <ul class="nav">
+        <li class="navtext"><a href="index.html">Home</a></li>
+        <li class="navtext" style="background-color:#bb152b"><a href="projects.html">Projects</a></li>
+        <li class="navtext"><a href="https://drive.google.com/file/d/1hiRjr5K0le4QHKl5sAdfv3_wkMLB-UDv/view?usp=sharing" target="_blank">Resume</a></li>
+        <li class="navtext" id="contactButton"><a>Contact Me</a></li>
+        <li class="navtext-drop" style="float:right">Class Links & Webring
+            <div class="dropdown">
+            <a href="https://mattm401.github.io/">Course Website</a>
+            <a href="https://jthensley03.github.io/">Previous Student</a>
+            <a href="https://mwang840.github.io/">Next Student</a>
+            </div></li>
+    </ul>
+    
+    <br>
+    <!--COOL PROJECT STUFF-->
+    <h2 class="projHeader">SAGE</h2>
+    <div>
+	<p>Sage is a bot created for the University of Delaware Computer Science Discord server. It is currently updated, maintained, and managed by a team of 4 hired undergraduate students. The tech stack includes Typescript, MongoDB, and DiscordJS (v13 -> v14).
+        <br><br>
+        We service over 25 professors and 3,000+ students. I have worked on this team for several years now and we work closely with UD faculty to create new features for Sage. Additionally, I am paid to moderate and manage the Discord server.
+        <br><br>
+        You can read up on Sage on <a href="https://ud-cis-discord.github.io/">our site</a> as well as see our source code on <a href="https://github.com/ud-cis-discord/Sage">our GitHub repo</a>.
+    </p>
+    </div>
+    <br>
+
+    <h2 class="projHeader">BOOTH'S ALGORITHM CALCULATOR</h2>
+    <div>
+    <p>
+        Created a booth's algorithm calculator in C without using the bit-shift operator. All conversions to binary and any arithmetic are done manually. It was also co-created by <a href="https://github.com/englandz">Zachary England</a>.
+        <br><br>
+        You can find the source code <a href="https://github.com/bladetyr/BoothAlgCalc">here</a>.
+    </p>
+    </div>
+    <br>
+
+    <h2 class="projHeader">CPU SCHEDULER SIMULATOR</h2>
+    <div>
+    <p>
+        This was a C++ project made for my operating systems class. I cannot link the source code since the instructor still uses this assignment, but the goal of it was to round robin schedule tasks as they came in, have the tasks 'run' (it didn't run the tasks since it is a simulator, it just used time to determine when tasks were done), and then continue scheduling based on new tasks coming in.
+        <br><br>It was a very informative project that made me realize how much I love systems, so I wanted to include it on this list! Feel free to ask about it, even if I cannot post source code publically.
+    </p>
+    </div>
+    <br>
+
+    <h2 class="projHeader">UNNAMED ONLINE CHATROOM</h2>
+    <div>
+    <p>
+        A messaging webapp made for a web security course. You can make an account and log in; usernames are just your email. Tech stack includes Firebase, JQuery, and the typical culprits: HTML and CSS. Firebase DB has rules set up to protect user data. Messages are retained even after logging out.
+        <br><br>
+        I made this one years ago as a sophomore, so the Firebase DB has expired. This is also when I just started learning web development so please be kind to it. It was meant to be a little silly. You can find it <a href="https://codepen.io/bladetyr/full/VwWBWod">here</a>, but since the DB no longer works, here is a screenshot:
+        <br><br>
+        <img src="/images/discord2.png" width="400px" height="300px" class="projImage"></img>
+    </p>
+    </div>
+    <br>
+
+    <!--MODAL CODE FOR FORM HERE-->
+    <div id="contactModal" class="modal">
+        <h1>Contact Form</h1>
+        <form id="contact">
+            <div id="errors" class="modalMessage"></div>
+            <label for='user_fname'>First Name:</label>
+            <input id='user_fname' name="user_fname" type='text' class='form-control' required>
+            <br><br>
+            <label for='user_lname'>Last Name:</label>
+            <input id='user_lname' name="user_lname" type='text' class='form-control' required>
+            <br><br>
+            <label for='user_email'>Email:</label>
+            <input id='user_email' name="user_email" type='text' class='form-control' required>
+            <br><br>
+            <label for='user_phone'>Phone Number:</label>
+            <input id='user_phone' name="user_phone" type='text' class='form-control' required>
+            <br><br>
+            <label for='user_message'>Message:</label>
+            <textarea id='user_message' name="user_message" rows="4" class='form-control' required></textarea>
+            <br><br>
+            <input style="float:left" id="submit" data-backdrop="static" type='submit' value='Submit'>
+            <button style="float:right" id="close">Close</button>
+        </form>
+    </div>
+</body>

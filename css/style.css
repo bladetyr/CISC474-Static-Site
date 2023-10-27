@@ -1,16 +1,78 @@
 /*DEFAULT STYLES*/
 body {
-  background-color: #95de98;
+  background-color: #382425;
 }
 
 div {
-  background-color: #bbf2c7;
+  background-color: #382425;
   border-radius: 10px;
-  border: 5px solid #33ab59;
+  border: 3px solid #bb152b;
+  color: #fee3e6;
+  box-shadow: 0 0 10px #bb152b;
+  width: 50%;
+  margin: auto;
   padding: 3px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #fee3e6;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+p a{
+  color: #ff576d;
+}
+
+/*SOCIAL MEDIA ICONS*/
+.fa {
+  padding: 9px;
+  margin: 12px;
+  text-align:center;
+  border-radius: 50px;
+  font-size: 70px;
+  width: 2.9%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: #201112;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #201112;
+  color: white;
+}
+
+.fa-email {
+  background: #201112;
+  color: white;
 }
 
 /*SPECIAL CASES/CLASSES*/
+.babyHeader {
+  font-size: 20px;
+  color:#ff576d;
+  text-shadow: 0 0 8px #ed0a28;
+  text-align: center;
+  padding-left: 0px;
+}
+
+.projHeader {
+  font-size: 25px;
+  color:#ff576d;
+  text-shadow: 0 0 8px #ed0a28;
+  text-align: center;
+  padding-left: 0px;
+}
+
 .borderless {
   border: 0px;
   margin: 0px;
@@ -34,7 +96,7 @@ div {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #220505;
 }
 
 .navtext {
@@ -48,7 +110,42 @@ div {
 }
 
 .navtext:hover {
-  background-color: #165723;
+  background-color: #bb152b;
+}
+
+.navtext-drop {
+  float:left;
+  padding: 14px 16px;
+  font-size: 18px;
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  color:whitesmoke;
+  text-decoration: none;
+}
+
+.navtext-drop:hover .dropdown {
+  display:block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  border: none;
+  width: 10%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown a {
+  display: block;
+  color: whitesmoke;
+  background-color: #220505;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #bb152b;
 }
 
 .navtext a {
@@ -57,21 +154,43 @@ div {
 }
 
 .header {
-    color: #07250d;
+    color: #fee3e6;
     font-size: 50px;
-    width: 100%;
-    margin: 0;
-    background-color: #33ab59;
+    margin: 0px;
+    padding-left: 20px;
+    width: 98.7%;
+    background-color: #6d0815;
+    text-shadow: 0 0 8px #ed0a28;
  }
 
+ .footer {
+  color: #fee3e6;
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 20px;
+  width: 98.5%;
+  text-align: center;
+  border: 0px;
+  box-shadow: 0 0 0;
+}
+
 .normalimg {
-    border: 5px solid #165723;
+    border: 5px solid #ff576d;
     border-radius: 50%;
+    box-shadow: 0 0 8px #ed0a28;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
-    width: 20%;
+    margin-top: 2%;
+    width: 13%;
+}
+
+.projImage {
+  margin: auto;
+  border: 5px solid #ff576d;
+  box-shadow: 0 0 8px #ed0a28;
+  text-align: center;
+  display: block;
 }
 
 /*MODAL STUFF*/
@@ -83,10 +202,11 @@ div {
   right: auto;
   top: 30%;
   width: 40%; /* Full width */
+  padding: 5px;
   height: 50%; /* Full height */
+  text-align: center;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(255, 255, 255); /* Fallback color */
-  background-color: rgba(255, 255, 255, 0.8); /* Black w/ opacity */
+  background-color: #201112; /* Fallback color */
 }
 
 @keyframes fadeIn {
